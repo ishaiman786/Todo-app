@@ -1,0 +1,63 @@
+.list-item.completed .todo-text {
+  text-decoration: line-through;
+  text-decoration-color: #7E4FCC;
+  text-decoration-thickness: 3px;
+
+}
+
+
+
+.icon-tick {
+  cursor: pointer;
+
+}
+
+.icon-edit, .icon-delete {
+  cursor: pointer;
+
+}
+.edit-input {
+  width: 80%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.edit-input:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.icon-save, .icon-cancel {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 4px;
+
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-save:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.icon-cancel:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+  

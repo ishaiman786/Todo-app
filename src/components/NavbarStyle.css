@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+.logo {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.logo img {
+  height: 80px;
+  width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 3rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #7a48cd;
+}
+
+.menu-icon, .close-icon {
+  display: none; /* Initially hide both menu and close icons */
+  cursor: pointer;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #b2a0ce;
+    width: 100%;
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px; /* Corrected line */
+    z-index: 1000;
+    opacity: 0.9;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show the menu when .show class is applied */
+  }
+
+  .nav-links li {
+    margin-bottom: 1rem;
+  }
+
+  .menu-icon {
+    display: block; 
+  }
+
+  .menu-icon.hide {
+    display: none; /* Hide the menu icon when .hide class is applied */
+  }
+
+  .close-icon {
+    display: block; /* Display the close icon when menu is open */
+  }
+
+  .close-icon.hide {
+    display: none; /* Hide the close icon when menu is closed */
+  }
+}
